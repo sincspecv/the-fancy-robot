@@ -1,0 +1,32 @@
+# System files
+.DS_Store
+
+# Editor files
+.idea
+
+# Machine dependent configuration
+env.ini
+
+# Composer packages
+vendor
+
+# Wordpress
+wp
+wp-content/plugins/*
+!wp-content/plugins/the-fancy-robot
+wp-content/themes/*
+!wp-content/themes/the-fancy-robot
+wp-content/uploads
+wp-content/upgrade
+wp-content/debug.log
+
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+wp-content/themes/the-fancy-robot/.cache-loader
+wp-content/themes/the-fancy-robot/dist
+wp-content/themes/the-fancy-robot/node_modules
+wp-content/themes/the-fancy-robot/npm-debug.log
+wp-content/themes/the-fancy-robot/yarn-error.log
+wp-content/themes/the-fancy-robot/vendor
+wp-content/themes/the-fancy-robot/resources/assets/config-local.json
+/.gitlab-ci.yml

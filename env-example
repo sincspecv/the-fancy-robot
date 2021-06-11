@@ -1,0 +1,11 @@
+site_name="Roboter"
+site_slug="roboter"
+admin_name="thefancyrobot"
+admin_password="ARNt/ep54qXXc!=5"
+
+db_host="127.0.0.1"
+db_port="3306"
+db_name="roboter"
+db_user="root"
+db_password=""
+db_prefix="wp_"
