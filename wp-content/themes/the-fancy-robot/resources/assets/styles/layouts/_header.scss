@@ -1,3 +1,42 @@
-.banner .nav {
-  @extend .menu;
+.banner {
+  background: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.1s ease-in-out;
+
+  .site-brand {
+    &__logo {
+      max-width: 60px;
+
+      svg {
+        width: 60px;
+        height: auto;
+
+        path {
+          fill: $primary-color;
+        }
+      }
+    }
+  }
+
+  .nav {
+    @extend .menu;
+  }
+
+  &.transparent {
+    background: transparent;
+
+    .site-brand {
+      &__logo {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
 }

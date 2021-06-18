@@ -11,24 +11,25 @@ $x-small:  0.64rem;  // 11.52px
 $tiny:     0.512rem; // 9.22px
 
 /** Colors **/
-$accent-color: #fdbd25;
-$light-gray: #e6e7e8;
-$medium-gray: #929292;
-$dark-gray: #333;
-$black: #222;
-$white: #fff;
+$accent-color: #46b4e8;
+$light-gray: #f5f7f9;
+$medium-gray: #b2b3b3;
+$dark-gray: #3e3e3e;
+$black: #111;
+$white: #fefefe;
+$gold: #967928;
 $foundation-palette: (
-  primary: #036571,
-  secondary: #008e8c,
+  primary: #284596,
+  secondary: #0f1e45,
   accent: $accent-color,
   success: #3adb76,
   warning: #fdbd25,
   alert: #cc4b37,
 );
 
-$light-color: $light-gray;
-$medium-color: #008e8c;
-$dark-color: #036571;
+$light-color: $accent-color;
+$medium-color: map-get($foundation-palette, "primary");
+$dark-color: map-get($foundation-palette, "secondary");
 
 /** Breakpoints **/
 $breakpoints: (
@@ -68,9 +69,9 @@ $paragraph-lineheight: 1.4;
 $lead-lineheight: 1.4;
 
 /** Fonts **/
-$body-font-family: "degular", Helvetica, Roboto, Arial, sans-serif;
-$header-font-family: "sofia-pro", Helvetica, Roboto, Arial, sans-serif;
-$header-font-weight: 900;
+$body-font-family: "Roboto", Helvetica, Arial, sans-serif;
+$header-font-family: "Oswald", sans-serif;
+$header-font-weight: 600;
 
 /** Buttons **/
 $button-padding: $small $normal;

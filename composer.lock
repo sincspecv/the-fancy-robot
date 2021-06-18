@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca75a961c286ded609ecf181a728603f",
+    "content-hash": "802f1c0be0577b234462619de5cf0f3b",
     "packages": [
         {
             "name": "composer/installers",
@@ -235,34 +235,16 @@
             "time": "2020-09-14T16:53:23+00:00"
         },
         {
-            "name": "wpackagist-plugin/display-html-sitemap",
-            "version": "1.0.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/display-html-sitemap/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/display-html-sitemap.zip?timestamp=1592907778"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/display-html-sitemap/"
-        },
-        {
             "name": "wpackagist-plugin/redirection",
-            "version": "4.9.2",
+            "version": "5.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/4.9.2"
+                "reference": "tags/5.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.4.9.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -271,40 +253,22 @@
             "homepage": "https://wordpress.org/plugins/redirection/"
         },
         {
-            "name": "wpackagist-plugin/simple-custom-post-order",
-            "version": "2.5.2",
+            "name": "wpackagist-plugin/seo-by-rank-math",
+            "version": "1.0.65",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-custom-post-order/",
-                "reference": "tags/2.5.2"
+                "url": "https://plugins.svn.wordpress.org/seo-by-rank-math/",
+                "reference": "tags/1.0.65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-custom-post-order.2.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.65.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-custom-post-order/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "15.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/15.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.15.3.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+            "homepage": "https://wordpress.org/plugins/seo-by-rank-math/"
         }
     ],
     "packages-dev": [],
@@ -314,7 +278,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"

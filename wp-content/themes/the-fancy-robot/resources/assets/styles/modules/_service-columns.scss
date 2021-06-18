@@ -1,0 +1,174 @@
+.service-columns {
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: $small;
+  }
+
+  &__column {
+    &-wrap {
+      border: 0;
+      border-radius: 0;
+      height: 100%;
+      margin-bottom: 0;
+    }
+
+    &-icon {
+      width: $x-large;
+      height: $x-large;
+      display: inline-block;
+      float: left;
+      margin-right: $tiny;
+    }
+
+    &-content {
+      padding: $xx-large;
+    }
+
+    @include breakpoint(medium) {
+      align-self: stretch;
+      flex: 1;
+    }
+  }
+
+  &.white-bg {
+    h2 {
+      color: $primary-color;
+    }
+
+    .lead {
+      color: $secondary-color;
+    }
+
+    .service-columns {
+      &__column {
+        &-wrap {
+          background-color: $primary-color;
+        }
+
+        &-icon {
+          path {
+            fill: $accent-color;
+          }
+        }
+
+        &-content {
+          h3 {
+            color: $white;
+          }
+
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &.light-bg {
+    background-color: $light-color;
+
+    h2 {
+      color: $dark-color;
+    }
+
+    .lead {
+      color: $white;
+    }
+
+    .service-columns {
+      &__column {
+        &-wrap {
+          background-color: $dark-color;
+        }
+
+        &-icon {
+          path {
+            fill: $accent-color;
+          }
+        }
+
+        &-content {
+          h3 {
+            color: $white;
+          }
+
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &.medium-bg {
+    background-color: $medium-color;
+
+    h2 {
+      color: $white;
+    }
+
+    .lead {
+      color: $white;
+    }
+
+    .service-columns {
+      &__column {
+        &-wrap {
+          background-color: $accent-color;
+        }
+
+        &-icon {
+          path {
+            fill: $dark-color;
+          }
+        }
+
+        &-content {
+          h3 {
+            color: $dark-color;
+          }
+
+          p {
+            color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.gray-bg {
+    background-color: $light-gray;
+
+    h2 {
+      color: $dark-color;
+    }
+
+    .lead {
+      color: $dark-color;
+    }
+
+    .service-columns {
+      &__column {
+        &-wrap {
+          background-color: $dark-color;
+        }
+
+        &-icon {
+          path {
+            fill: $accent-color;
+          }
+        }
+
+        &-content {
+          h3 {
+            color: $white;
+          }
+
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -166,10 +166,9 @@ add_action('wp_footer', function() {
  * Google Fonts
  */
 add_action('wp_head', function() {
-    $google_font_url = '';
-    if(!empty($google_font_url)) :
-        ?>
-        <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    $google_font_url = 'https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@400;500&display=swap';
+
+    if(!empty($google_font_url)) : ?>
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="<?=$google_font_url?>" rel="stylesheet">
     <?php endif;
@@ -179,7 +178,7 @@ add_action('wp_head', function() {
  * Typekit
  */
 add_action('wp_head', function() {
-    $proj_id = 'wdq1klo';
+    $proj_id = '';
 
     if(!empty($proj_id)) : ?>
         <link rel="preconnect" href="https://use.typekit.net" crossorigin>

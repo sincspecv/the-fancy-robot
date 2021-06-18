@@ -8,6 +8,7 @@ use TFR\ACF\Groups;
 use TFR\ACF\Layouts;
 use TFR\ACF\OptionsPages;
 use TFR\ACF\Repeaters;
+use TFR\ACFToPost\Base\Layout;
 use TFR\PostTypes;
 
 class Bootstrap {
@@ -25,9 +26,9 @@ class Bootstrap {
          * Post Types
          */
         PostTypes\Services::init();
-        PostTypes\Template::init();
+//        PostTypes\Template::init();
         PostTypes\Testimonial::init();
-        PostTypes\LandingPageTemplate::init();
+//        PostTypes\LandingPageTemplate::init();
     }
 
     /**
@@ -51,8 +52,8 @@ class Bootstrap {
             return [
                 Groups\Page::class,
                 Groups\Post::class,
-	            Groups\LandingPage::class,
-	            Groups\LandingPageFooter::class,
+//	            Groups\LandingPage::class,
+//	            Groups\LandingPageFooter::class,
 	            Groups\Testimonial::class,
             ];
         });
@@ -62,7 +63,7 @@ class Bootstrap {
             return [
                 Repeaters\Modules::class,
                 Repeaters\PostModules::class,
-                Repeaters\LandingPageModules::class,
+//                Repeaters\LandingPageModules::class,
             ];
         });
 
@@ -70,9 +71,11 @@ class Bootstrap {
         add_filter( 'acf_to_post/init/layouts', function() {
             return [
                 Layouts\Hero::class,
+                Layouts\HeroNav::class,
                 Layouts\Content::class,
                 Layouts\FiftyFifty::class,
 	            Layouts\ImageGrid::class,
+                Layouts\ServiceColumns::class,
 	            Layouts\LandingPageHero::class,
 	            Layouts\LandingPageFullWidthContent::class,
 	            Layouts\LandingPageTestimonials::class,

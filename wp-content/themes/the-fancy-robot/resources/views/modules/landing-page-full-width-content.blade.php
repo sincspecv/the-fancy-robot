@@ -1,4 +1,4 @@
-<section class="lp-full-width {{ $fields->background }} {{ $fields->form != 0 ? 'has-form' : '' }}">
+<section class="lp-full-width module {{ $fields->background }} {{ $fields->form != 0 ? 'has-form' : '' }}">
   <div class="grid-container grid-padding-x grid-padding-y {{ $fields->form == 0 ? 'align-self-middle' : '' }}">
     <div class="grid-x grid-margin-x grid-padding-y">
       <article class="cell {{ $fields->form != 0 ? 'medium-6' : 'medium-10 medium-offset-1 align-self-middle' }} content-container">
