@@ -19,7 +19,7 @@
       </div>
     </div>
     <aside class="hero-nav__overlay-image">
-      <img src="{!! esc_url_raw($fields->overlay_image->url) !!}" alt="{!! esc_attr($fields->overlay_image->alt) !!}" />
+      <img src="{!! esc_url_raw($fields->overlay_image->url) !!}" alt="{!! esc_attr($fields->overlay_image->alt) !!}" style="min-width:{{ App::get_image_width($fields->overlay_image->ID, 'full', true) }}" />
     </aside>
   </div>
 </section>

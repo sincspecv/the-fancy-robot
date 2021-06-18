@@ -79,7 +79,7 @@ class App extends Controller
 
     /**
      * Return object of social media links
-     * 
+     *
      * @return false|mixed
      */
     public function social_links() {
@@ -224,5 +224,17 @@ class App extends Controller
         } else {
             return $pagination;
         }
+    }
+
+    public static function get_image_width($post_id, $size = 'full', $return_string = false) {
+        $src = wp_get_attachment_image_src($post_id, $size);
+
+        return $return_string ? $src[1].'px' : $src[1];
+    }
+
+    public static function get_image_height($post_id, $size = 'full', $return_string = false) {
+        $src = wp_get_attachment_image_src($post_id, $size);
+
+        return $return_string ? $src[2].'px' : $src[2];
     }
 }

@@ -3,10 +3,8 @@
   background-position: bottom;
   position: relative;
   margin: 0;
-  min-height: 0;
-  height: 0;
+  height: 768px;
   width: 100%;
-  padding-bottom: 75%;
   overflow: hidden;
 
   .parallax-container {
@@ -21,23 +19,24 @@
   }
 
   &__video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     z-index: 0;
 
-    @include breakpoint(medium) {
-      position: fixed;
+    @include breakpoint(large) {
+      width: 100%;
+      height: auto;
     }
   }
 
   &__content {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     color: $white;
-    margin-top: 5%;
+    margin-top: $xx-jumbo * 2;
     text-shadow: 0 0 4px rgba($black, 0.45);
 
     h1 {
@@ -54,9 +53,8 @@
 
     @include breakpoint(medium) {
       z-index: 1;
-      margin-top: 5%;
       position: fixed;
-      top: 2vw;
+      top: $x-jumbo;
       left: 0;
       width: 100%;
 
@@ -90,11 +88,16 @@
     img {
       position: absolute;
       left: 50%;
-      bottom: 0;
+      bottom: $xx-jumbo * -1;
       transform: translateX(-50%);
-      width: auto;
-      min-width: 100%;
-      height: 100%;
+      min-width: 1024px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include breakpoint(large) {
+      bottom: 0;
+      min-width: 2000px;
     }
   }
 
@@ -152,8 +155,17 @@
   }
 
   @include breakpoint(medium) {
-    min-height: 0;
+    height: 1054px;
+    padding: 0;
+  }
+
+  @include breakpoint(xlarge) {
+    height: 1175px;
+  }
+
+  @media all and (min-width: 1975px) {
     height: 0;
+    min-height: 0;
     padding-bottom: 56.4%;
   }
 }
