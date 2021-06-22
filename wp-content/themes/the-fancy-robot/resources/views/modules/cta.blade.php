@@ -5,6 +5,7 @@
         <p class="lead">{!! esc_attr($fields->pain) !!}</p>
         <h2>{!! esc_attr($fields->agitate) !!}</h2>
         <p>{!! esc_attr($fields->solve) !!}</p>
+        <a href="#" class="button gold cta-modal">{!! esc_attr($fields->button_text) !!}</a>
       </div>
     </div>
   </div>

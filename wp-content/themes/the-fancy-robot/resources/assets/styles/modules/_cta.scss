@@ -7,4 +7,9 @@
     position: relative;
     z-index: 1;
   }
+
+  &-modal {
+    text-transform: uppercase;
+    margin-top: $xx-large;
+  }
 }

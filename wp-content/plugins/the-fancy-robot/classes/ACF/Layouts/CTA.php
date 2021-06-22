@@ -36,6 +36,11 @@ class CTA extends Layout {
 				'label' => __( 'Solve', Plugin::TEXT_DOMAIN ),
 			]),
 
+            $fields->add('text',  [
+                'name' => 'button_text',
+                'label' => __('Button Text', Plugin::TEXT_DOMAIN),
+            ]),
+
 			$fields->add( 'textarea', [
 				'name'  => 'background_svg',
 				'label' => __( 'Background SVG', Plugin::TEXT_DOMAIN ),

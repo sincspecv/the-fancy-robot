@@ -14,7 +14,7 @@ export default {
       navToggle.classList.toggle('active');
       mobileNav.classList.toggle('active');
     })
-    
+
     /**
      * Sliders use Siema. See: https://pawelgrzybek.github.io/siema/
      */
@@ -56,5 +56,20 @@ export default {
         }
       })
     }
+
+    const modal = document.querySelector('#cal-modal');
+    const modalClose = modal.querySelector('.modal-close');
+    modalClose.addEventListener('click', event => {
+      event.preventDefault();
+      modal.classList.toggle('visible');
+    })
+
+    const modalButtons = document.querySelectorAll('.button.cta-modal');
+    [].forEach.call(modalButtons, button => {
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        modal.classList.toggle('visible');
+      })
+    })
   },
 };

@@ -25,6 +25,12 @@ html {
   background-color: $body-background;
 }
 
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.1pt;
+}
+
 .svg-bg {
   position: absolute;
   top: 50%;
