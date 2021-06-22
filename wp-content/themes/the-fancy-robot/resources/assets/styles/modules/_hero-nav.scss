@@ -33,7 +33,7 @@
   }
 
   &__content {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     color: $white;
     margin-top: $xx-jumbo * 2;
@@ -53,7 +53,6 @@
 
     @include breakpoint(medium) {
       z-index: 1;
-      position: fixed;
       top: $x-jumbo;
       left: 0;
       width: 100%;

@@ -1,0 +1,10 @@
+.cta {
+  position: relative;
+  background-color: $primary-color;
+
+  &__content {
+    color: $white;
+    position: relative;
+    z-index: 1;
+  }
+}
