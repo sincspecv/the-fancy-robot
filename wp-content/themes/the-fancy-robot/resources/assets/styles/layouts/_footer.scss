@@ -1,0 +1,27 @@
+.footer {
+  padding-top: $jumbo;
+  padding-bottom: $jumbo;
+  background: $secondary-color;
+
+  &-nav {
+    list-style: none;
+    margin: 0;
+
+    .menu-item {
+      padding-left: $small;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: $white;
+    margin: 0;
+  }
+}
