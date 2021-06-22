@@ -16,7 +16,7 @@
     "digital-strike/gravityforms": "2.4.21",
     "littlebizzy/speed-demon": "1.4.0",
     "roots/soil": "^3.9",
-    "wpackagist-plugin/seo-by-rank-math":"1.0.65",
+    "wpackagist-plugin/seo-by-rank-math":"1.0.66.1",
     "wpackagist-plugin/redirection": "5.1.1"
   },
   "repositories": [
