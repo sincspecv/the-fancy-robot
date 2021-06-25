@@ -237,4 +237,10 @@ class App extends Controller
 
         return $return_string ? $src[2].'px' : $src[2];
     }
+
+    public function featured_image_url() {
+        $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+
+        return !empty($img[0]) ? $img[0] : false;
+    }
 }

@@ -52,6 +52,7 @@ class Bootstrap {
             return [
                 Groups\Page::class,
                 Groups\Post::class,
+                Groups\PageHeader::class,
 //	            Groups\LandingPage::class,
 //	            Groups\LandingPageFooter::class,
 	            Groups\Testimonial::class,

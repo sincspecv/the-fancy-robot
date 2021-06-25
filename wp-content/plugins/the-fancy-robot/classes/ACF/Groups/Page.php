@@ -16,5 +16,6 @@ class Page extends Group {
 		$this->setPostTypes( ['page'] );
 		$this->ignoreTemplates( ['views/template-landing-page.blade.php'] );
 		$this->setHiddenElements( ['the_content'] );
+		$this->setOrder(1);
 	}
 }

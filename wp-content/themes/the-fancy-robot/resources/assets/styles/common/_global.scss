@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
   font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   overscroll-behavior: none;
-  height: calc(100vh * 2);
 
   @include breakpoint(large) {
     font-size: 18px;
@@ -54,4 +53,8 @@ html {
       fill: $secondary-color;
     }
   }
+}
+
+body:not(.home) #main {
+  margin-top: 91px;
 }
