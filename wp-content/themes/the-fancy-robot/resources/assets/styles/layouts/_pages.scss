@@ -1,0 +1,27 @@
+.page-header {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $light-gray;
+
+  &__image {
+    &.featured {
+      min-height: $xx-jumbo * 4;
+    }
+  }
+
+  &__intro {
+    margin-top: $normal;
+    margin-bottom: $normal;
+
+    @include breakpoint(medium) {
+      margin-top: initial;
+      margin-bottom: initial;
+      padding-left: $xx-large !important;
+    }
+  }
+
+  @include breakpoint(medium) {
+    padding-top: $xx-jumbo;
+    padding-bottom: $xx-jumbo;
+  }
+}

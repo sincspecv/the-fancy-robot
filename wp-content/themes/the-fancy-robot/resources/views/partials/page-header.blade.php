@@ -1,4 +1,4 @@
-<section class="page-header module">
+<section class="page-header">
   <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
         @if($show_featured_image)
