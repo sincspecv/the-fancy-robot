@@ -25,6 +25,7 @@ export default {
 
     const banner = document.querySelector('.banner');
     const hero = document.querySelector('.hero-nav');
+    const ctaButton = banner.querySelector('.button.cta-modal');
     if(banner && banner != undefined) {
       if(hero && hero != undefined) {
 
@@ -33,8 +34,10 @@ export default {
           const scrollDistance = hero.offsetHeight * 0.75;
           if(window.pageYOffset >= scrollDistance) {
             banner.classList.remove('transparent');
+            ctaButton.classList.remove('hollow');
           } else {
             banner.classList.add('transparent');
+            ctaButton.classList.add('hollow');
           }
         });
       }

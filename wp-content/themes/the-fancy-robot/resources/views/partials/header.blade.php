@@ -7,6 +7,9 @@
       <div class="nav-wrap cell large-auto align-right show-for-large">
         @include('partials.nav-desktop')
       </div>
+      <div class="cell shrink show-for-large align-right">
+        <a href="#" class="button gold hollow cta-modal" style="margin:0">Schedule a call!</a>
+      </div>
       @include('partials.nav-toggle')
     </div>
   </div>
