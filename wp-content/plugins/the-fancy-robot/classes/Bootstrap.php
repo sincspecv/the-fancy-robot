@@ -51,7 +51,7 @@ class Bootstrap {
         add_filter( 'acf_to_post/init/groups', function() {
             return [
                 Groups\Page::class,
-                Groups\Post::class,
+//                Groups\Post::class,
                 Groups\PageHeader::class,
 //	            Groups\LandingPage::class,
 //	            Groups\LandingPageFooter::class,

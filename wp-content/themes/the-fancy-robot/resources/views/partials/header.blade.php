@@ -1,4 +1,4 @@
-<header class="banner">
+<header class="banner {!! is_front_page() ? 'transparent' : '' !!}">
   <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y align-middle">
       <div class="site-brand cell small-10 large-4 align-left">

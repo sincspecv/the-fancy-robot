@@ -238,6 +238,17 @@ class App extends Controller
         return $return_string ? $src[2].'px' : $src[2];
     }
 
+    public function featured_image() {
+        $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+        $alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+
+        $featured_image = new \stdClass();
+        $featured_image->url = !empty($img[0]) ? $img[0] : false;
+        $featured_image->alt = !empty($alt) ? esc_attr($alt) : false;
+
+        return $featured_image;
+    }
+
     public function featured_image_url() {
         $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
 
