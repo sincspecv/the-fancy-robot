@@ -187,3 +187,26 @@ add_action('wp_head', function() {
         <link rel="stylesheet" href="https://use.typekit.net/<?=$proj_id?>.css">
     <?php endif;
 });
+
+/**
+ * Inject critical assets in head as early as possible
+ * See: https://roots.io/guides/asynchronous-css-loading-in-sage/
+ */
+add_action('wp_head', function (): void {
+    if (is_dev()) {
+        return;
+    }
+
+    $page_type = is_archive() ? 'archive' : ( is_single() || is_page() ? ( is_front_page() ? 'home' : 'single' ) : 'single' );
+    $post_type = get_post_type();
+
+    $file_name = "critical-{$post_type}-{$page_type}.css";
+
+    $file_path = config('assets.critical') . '/styles/' . $file_name;
+
+    error_log($file_path);
+
+    if (file_exists($file_path)) {
+        echo '<style id="critical-css" media="all">' . file_get_contents($file_path) . '</style>';
+    }
+}, 1);

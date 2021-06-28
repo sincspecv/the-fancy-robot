@@ -136,3 +136,16 @@ function display_sidebar()
     isset($display) || $display = apply_filters('sage/display_sidebar', false);
     return $display;
 }
+
+/**
+ * Checks if global var WP_ENV is set to development.
+ *
+ * @return bool
+ */
+function is_dev() {
+    if(defined('WP_ENV') && WP_ENV === 'development') {
+        return true;
+    }
+
+    return false;
+}
