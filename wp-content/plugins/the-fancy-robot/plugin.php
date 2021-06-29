@@ -4,9 +4,9 @@ Plugin Name: Core Functionality
 Plugin URI: https://www.digitalstrike.com
 Description: Core functionality !! DO NOT UNINSTALL !!
 Version: 1.0.0
-Author: Digital Strike
-Author URI: https://www.digitalstrike.com
-Text Domain: digital-strike
+Author: The Fancy Robot, LLC
+Author URI: https://thefancyrobot.com
+Text Domain: the-fancy-robot
 Domain Path: /lang
 */
 
