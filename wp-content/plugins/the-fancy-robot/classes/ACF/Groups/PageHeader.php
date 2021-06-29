@@ -30,6 +30,11 @@ class PageHeader extends Group {
                     'operator' => '!=',
                     'value' => 'front_page',
                 ],
+                [
+                    'param' => 'post_template',
+                    'operator' => '!=',
+                    'value' => 'views/template-legal.blade.php',
+                ],
             ],
         ];
     }

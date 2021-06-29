@@ -9,7 +9,7 @@
         @else
           <div class="cell medium-4 align-self-middle">
             <figure class="page-header__image">
-              <img src="{!! esc_url_raw($page_header_image->sizes->large) !!}" />
+              <img src="{!! esc_url_raw($page_header_image->sizes->large) !!}" alt="{!! esc_attr($page_header_image->alt) !!}" />
             </figure>
         @endif
       </div>

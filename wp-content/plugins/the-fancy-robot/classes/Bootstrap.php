@@ -25,7 +25,7 @@ class Bootstrap {
         /**
          * Post Types
          */
-        PostTypes\Services::init();
+//        PostTypes\Services::init();
 //        PostTypes\Template::init();
         PostTypes\Testimonial::init();
 //        PostTypes\LandingPageTemplate::init();
