@@ -1,0 +1,32 @@
+body.blog {
+  h1 {
+    color: $secondary-color;
+    margin-bottom: $xx-jumbo;
+  }
+
+  .card {
+    border: 0;
+    box-shadow: 4px 4px 10px 1px rgba($black, 0.24);
+
+    &-section {
+      &.archive-image {
+        padding: 0;
+
+        figure {
+          height: 0;
+          padding-bottom: 56.25%;
+        }
+      }
+
+      &.archive-button {
+        padding: 0;
+
+        .button {
+          display: block;
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
