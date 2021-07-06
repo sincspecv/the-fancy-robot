@@ -1,8 +1,8 @@
 <div class="cell medium-4">
   <div class="card">
     <div class="card-section archive-image">
-      <figure style="background-image:url({!! esc_url_raw($featured_image->url) !!})">
-        <img src="{!! esc_url_raw($featured_image->url) !!}" alt="{!! esc_attr($featured_image->alt) !!}" class="show-for-sr" />
+      <figure style="background-image:url({!! esc_url_raw(App::featuredImage()->url) !!})">
+        <img src="{!! esc_url_raw(App::featuredImage()->url) !!}" alt="{!! esc_attr(App::featuredImage()->alt) !!}" class="show-for-sr" />
       </figure>
     </div>
     <div class="card-section archive-content">

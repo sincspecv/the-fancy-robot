@@ -239,8 +239,9 @@ class App extends Controller
     }
 
     public function featured_image() {
-        $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
-        $alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
+        $post_id = get_the_ID();
+        $img = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'large');
+        $alt = get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
 
         $featured_image = new \stdClass();
         $featured_image->url = !empty($img[0]) ? $img[0] : false;
@@ -253,5 +254,17 @@ class App extends Controller
         $img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
 
         return !empty($img[0]) ? $img[0] : false;
+    }
+
+    public static function featuredImage() {
+        $post_id = get_the_ID();
+        $img = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'large');
+        $alt = get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
+
+        $featured_image = new \stdClass();
+        $featured_image->url = !empty($img[0]) ? $img[0] : false;
+        $featured_image->alt = !empty($alt) ? esc_attr($alt) : false;
+
+        return $featured_image;
     }
 }
