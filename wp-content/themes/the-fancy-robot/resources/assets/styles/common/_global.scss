@@ -58,3 +58,10 @@ html {
 body:not(.home) #main {
   margin-top: 91px;
 }
+
+.four-oh-four-container {
+  min-height: calc(100vh - 204px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
