@@ -6,6 +6,8 @@
   &__image {
     &.featured {
       min-height: $xx-jumbo * 4;
+      background-size: cover;
+      background-position: center;
     }
   }
 

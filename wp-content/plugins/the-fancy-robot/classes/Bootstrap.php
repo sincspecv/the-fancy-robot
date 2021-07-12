@@ -75,6 +75,7 @@ class Bootstrap {
                 Layouts\HeroNav::class,
                 Layouts\Content::class,
                 Layouts\CTA::class,
+                Layouts\Tabs::class,
                 Layouts\FiftyFifty::class,
 	            Layouts\ImageGrid::class,
                 Layouts\ServiceColumns::class,
