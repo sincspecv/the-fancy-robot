@@ -1,6 +1,6 @@
 <section class="hero-nav">
-  <div class="parallax-container">
-    <video muted preload="none" class="hero-nav__video" loop>
+  <div class="parallax-container" style="background-image:url({!! esc_url_raw($fields->video_screen->sizes->large) !!})">
+    <video muted preload="none" class="hero-nav__video" loop poster="{!! esc_url_raw($fields->video_screen->sizes->large) !!}">
       <source src="{!! esc_url_raw($fields->bg_video->url) !!}" type="{!! $fields->bg_video->mime_type !!}">
     </video>
     <div class="grid-container hero-nav__content">

@@ -36,7 +36,7 @@ const criticalPaths = () => {
       ],
       penthouse: {
         blockJSRequests: false,
-      }
+      },
     }))
   })
 
@@ -57,7 +57,7 @@ module.exports = {
     version: false,
     timings: false,
     children: false,
-    errors: false,
+    errors: true,
     errorDetails: false,
     warnings: false,
     chunks: false,

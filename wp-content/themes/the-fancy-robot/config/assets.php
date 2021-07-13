@@ -28,4 +28,8 @@ return [
     */
 
     'uri' => get_theme_file_uri().'/dist',
+
+    'path' => get_theme_file_path().'/dist',
+
+    'critical' => get_theme_file_path().'/critical',
 ];

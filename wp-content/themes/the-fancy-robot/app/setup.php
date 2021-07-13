@@ -204,8 +204,6 @@ add_action('wp_head', function (): void {
 
     $file_path = config('assets.critical') . '/styles/' . $file_name;
 
-    error_log($file_path);
-
     if (file_exists($file_path)) {
         echo '<style id="critical-css" media="all">' . file_get_contents($file_path) . '</style>';
     }

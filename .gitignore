@@ -16,8 +16,8 @@ wp-content/plugins/*
 !wp-content/plugins/the-fancy-robot
 wp-content/themes/*
 !wp-content/themes/the-fancy-robot
-wp-content/uploads
-wp-content/upgrade
+wp-content/uploads/
+wp-content/upgrade/
 wp-content/debug.log
 
 # Include your project-specific ignores in this file
