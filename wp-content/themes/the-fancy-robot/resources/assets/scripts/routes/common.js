@@ -68,6 +68,11 @@ export default {
     [].forEach.call(modalButtons, button => {
       button.addEventListener('click', event => {
         event.preventDefault();
+        // const script = modal.querySelector('script[src=""]');
+        // if(script) {
+        //   script.setAttribute('src', script.dataset.src);
+        //   jQuery.getScript(script.dataset.src);
+        // }
         modal.classList.toggle('visible');
       })
     })
