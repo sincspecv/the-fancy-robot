@@ -21,5 +21,10 @@
     <aside class="hero-nav__overlay-image">
       <img src="{!! esc_url_raw($fields->overlay_image->url) !!}" alt="{!! esc_attr($fields->overlay_image->alt) !!}" style="min-width:{{ App::get_image_width($fields->overlay_image->ID, 'full', true) }}" />
     </aside>
+    @if($fields->button)
+    <div class="hero-nav__button">
+      <a href="{!! esc_url_raw($fields->button->url) !!}" class="button medium gold">{!! esc_attr($fields->button->title) !!}</a>
+    </div>
+    @endif
   </div>
 </section>

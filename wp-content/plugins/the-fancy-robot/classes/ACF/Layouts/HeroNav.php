@@ -48,14 +48,16 @@ class HeroNav extends Layout {
 			$fields->add( 'text', [
 				'name'  => 'heading',
                 'label' => __( 'Heading', Plugin::TEXT_DOMAIN ),
-                'wrapper' => [
-                    'width' => '75%',
-                ],
 			]),
 
 			$fields->add( 'wysiwyg', [
 				'name'  => 'text',
                 'label' => __( 'Text', Plugin::TEXT_DOMAIN ),
+			]),
+
+			$fields->add( 'link', [
+				'name'  => 'button',
+                'label' => __( 'Button', Plugin::TEXT_DOMAIN ),
 			]),
 		];
 	}

@@ -40,14 +40,20 @@
     text-shadow: 0 0 4px rgba($black, 0.45);
 
     h1 {
+      position: relative;
+      z-index: 0;
       text-transform: uppercase;
     }
 
     &-text {
+      position: relative;
+      z-index: 0;
       margin-top: 0 !important;
     }
 
     .cell {
+      position: relative;
+      z-index: 0;
       margin-bottom: 0;
     }
 
@@ -82,7 +88,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 1;
 
     img {
       position: absolute;
@@ -100,55 +106,38 @@
     }
   }
 
-  &__nav {
+  &__button {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 4;
+    left: 50%;
+    bottom: 25%;
+    z-index: 2;
+    color: $white;
+    text-shadow: 0 0 4px rgba($black, 0.45);
+    transform-style: preserve-3d;
+    transform: translateX(-50%);
 
-    &-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
+    @include breakpoint(medium) {
+      z-index: 1;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      h1 {
+        font-size: $xx-jumbo;
+      }
     }
 
-    &-item {
-      align-self: stretch;
-      flex: 1 1 auto;
-      height: 0;
-      padding-bottom: 28.25%;
-      position: relative;
+    //@media all and (max-width: 1236px) {
+    //  left: 0 !important;
+    //}
 
-      a {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotateY(-180deg);
-        transform-origin: 50% 50%;
-        transform-style: preserve-3d;
-        width: 100%;
-        height: 100%;
-        background: $white;
-        text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        opacity: 0;
-        transition: all 0.2s ease-in-out;
+    @include breakpoint(large) {
+      margin-top: 7%;
+      left: 50%;
+      transform: translateX(-50%);
 
-        &:hover {
-          transform: rotateY(0);
-          opacity: 1;
-        }
+      *:not(h1) {
+        font-size: $large;
       }
     }
   }

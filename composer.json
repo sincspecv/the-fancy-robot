@@ -1,23 +1,23 @@
 {
-  "name": "digital-strike/strike-theme",
+  "name": "the-fancy-robot/roboter",
   "description": "Boilerplate WordPress project",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
       "name": "Matthew Schroeter",
-      "email": "matthew@digitalstrike.com"
+      "email": "matt@thefancyrobot.com"
     }
   ],
   "require": {
     "php": "^7.4",
     "sincspecv/wp-acf-to-post": "0.1.4",
-    "digital-strike/advanced-custom-fields-pro": "5.9.3",
-    "digital-strike/gravityforms": "2.4.21",
+    "digital-strike/advanced-custom-fields-pro": "5.10.2",
+    "tfr/gravityforms": "2.5.12",
     "littlebizzy/speed-demon": "1.4.0",
     "roots/soil": "^3.9",
-    "wpackagist-plugin/seo-by-rank-math":"1.0.66.1",
-    "wpackagist-plugin/redirection": "5.1.1"
+    "wpackagist-plugin/seo-by-rank-math":"1.0.73",
+    "wpackagist-plugin/redirection": "5.1.3"
   },
   "repositories": [
     {
@@ -30,11 +30,11 @@
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.com:digital-strike/advanced-custom-fields-pro.git"
+      "url": "git@gitlab.com:sincspecv/advanced-custom-fields-pro.git"
     },
     {
       "type": "vcs",
-      "url": "git@gitlab.com:digital-strike/gravityforms.git"
+      "url": "git@gitlab.com:sincspecv/gravityforms.git"
     }
   ],
   "scripts": {
