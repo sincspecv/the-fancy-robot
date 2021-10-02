@@ -6,10 +6,12 @@
   &-nav {
     list-style: none;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
 
     .menu-item {
-      padding-left: $small;
-
       a {
         color: $white;
 
@@ -56,6 +58,31 @@
           height: $normal;
         }
       }
+    }
+  }
+
+  &__menus {
+    .cell {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+
+      .h4 {
+        color: $white;
+      }
+    }
+  }
+
+  &__site-brand {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    .site-brand__logo {
+      display: block;
+      width: 100%;
+      max-width: #{$xx-jumbo * 2.5};
+      height: auto;
     }
   }
 }
