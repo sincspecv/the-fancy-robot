@@ -20,8 +20,42 @@
     }
   }
 
-  .copyright {
-    color: $white;
-    margin: 0;
+  &__copyright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .copyright {
+      color: $white;
+      margin: 0;
+    }
+
+    .social-links {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      &__item {
+        display: block;
+
+        a {
+          display: block;
+          height: $x-jumbo;
+          width: $x-jumbo;
+          padding: $normal;
+        }
+
+        svg {
+          display: block;
+          fill: $white;
+          width: $normal;
+          height: $normal;
+        }
+      }
+    }
   }
 }
